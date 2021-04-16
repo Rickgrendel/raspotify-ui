@@ -1,0 +1,183 @@
+@font-face {
+    font-family: "Proxima Nova";
+    font-weight: bold;
+    src: url("../fonts/Proxima-Nova-Bold.otf");
+}
+
+@keyframes backgroundFade {
+    from {
+        opacity: 1;
+    }
+
+    to {
+        opacity: 0;
+    }
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background: #2b2b2b;
+}
+
+.background-change {
+    /*animation-duration: 2s;*/
+    /*animation-name: backgroundFade;*/
+    /*animation-fill-mode: forwards;*/
+    /*animation-timing-function: cubic-bezier(0.45, 0, 0.55, 1);*/
+}
+
+#new-background-canvas {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    z-index: 0;
+    transform: translate(-50%, -50%);
+}
+
+#background-canvas {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    z-index: 1;
+    transform: translate(-50%, -50%);
+}
+
+.content {
+    position: absolute;
+    z-index: 99999;
+    height: 100%;
+    width: 100%;
+}
+
+h1 {
+    color: white;
+    font-family: "Proxima Nova", serif;
+    font-weight: bold;
+    font-size: 100px;
+    margin-left: 200px;
+    margin-top: 140px;
+}
+
+.album-image {
+    position: absolute;
+    left: 0;
+    width: 418px;
+    height: 418px;
+    box-shadow: 0 -17px 88px 20px rgba(0,0,0,0.39);
+}
+
+.album-image-new {
+    position: relative;
+    width: 418px;
+    height: 418px;
+}
+
+.album-image-holder {
+    margin-left: 204px;
+    position: absolute;
+    bottom: 240px;
+    z-index: 999;
+}
+
+.album-image-blurry-1 {
+    margin-left: 397px;
+    bottom: 319px;
+    position: absolute;
+    width: 383px;
+    filter: blur(29px);
+    opacity: 0.6;
+}
+
+.album-image-blurry-2 {
+    margin-left: 683px;
+    bottom: 223px;
+    position: absolute;
+    width: 308px;
+    filter: blur(40px);
+    opacity: 0.6;
+}
+
+.album-name {
+    font-family: "Proxima Nova", serif;
+    color: #fff;
+    font-size: 21px;
+    margin-left: 200px;
+    width: 418px;
+    text-align: center;
+    display: block;
+    position: absolute;
+    bottom: 180px;
+}
+
+.song-name {
+    color: white;
+    font-family: "Proxima Nova", serif;
+    font-size: 59px;
+}
+
+.song-artist {
+    margin-top: -59px;
+}
+
+.text-content {
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 975px;
+    margin-right: 200px;
+    transform: translateY(-50%);
+}
+
+.text-wrapper {
+    height: 418px;
+    margin-top: 160px;
+    position: relative;
+    transform: translateZ(0);
+}
+
+span {
+    display: inline-block;
+    margin-right: 12px;
+}
+
+h3 {
+    font-size: 36px;
+    font-family: "Proxima Nova", serif;
+    color: #e9e9e9;
+}
+
+.listening-to {
+    margin-left: 204px;
+    top: 87px;
+    position: absolute;
+}
+
+.loader {
+    border: 16px solid #292929;
+    border-radius: 50%;
+    border-top: 16px solid #1DB954;
+    width: 120px;
+    height: 120px;
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+.scancode {
+    position: absolute;
+    right: 200px;
+    bottom: 100px;
+}
+
+.loading {
+    display: inline-block;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    left: 50%;
+    top: 50%;
+}

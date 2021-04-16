@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>Raspotify UI</title>
+    <link href="css/index.css" rel="stylesheet">
+    <script src="js/dist/anime.min.js"></script>
+    <script src="js/dist/stackblur.min.js"></script>
+    <script src="js/dist/axios.min.js"></script>
+</head>
+<body>
+<audio loop>
+    <source src="audio/369693__daxxtr__white-noise1.mp3">
+</audio>
+<div class="loading">
+    <div class="loader"></div>
+</div>
+<div class="main" style="opacity: 0">
+    <div class="background-image">
+        <canvas id="new-background-canvas"></canvas>
+        <canvas id="background-canvas"></canvas>
+    </div>
+    <div class="content">
+        <h3 class="listening-to">listening to:</h3>
+        <h1>Boem Boem Box</h1>
+        <div class="album">
+            <div class="album-image-holder">
+                <img src="" class="album-image-new" />
+                <img src="" class="album-image" />
+            </div>
+
+            <img src="" class="album-image-blurry-1" />
+            <img src="" class="album-image-blurry-2" />
+            <span class="album-name"></span>
+        </div>
+        <div class="text-wrapper">
+            <div class="text-content">
+                <h2 class="song-name"></h2>
+                <h3 class="song-artist"></h3>
+            </div>
+        </div>
+        <div class="scancode">
+
+        </div>
+    </div>
+</div>
+</body>
+<script src="js/window.js"></script>
+</html>

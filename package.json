@@ -1,0 +1,22 @@
+{
+  "name": "raspotify-ui-v2",
+  "version": "2.1.0",
+  "description": "A user interface for raspotify for the raspberry pi",
+  "main": "index.js",
+  "scripts": {
+    "start-server": "node backend/core.js"
+  },
+  "keywords": [
+    "raspotify",
+    "user-interface",
+    "nodejs"
+  ],
+  "author": "Rick Grendel",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1",
+    "request": "^2.88.2",
+    "stackblur-canvas": "^2.5.0",
+    "ws": "^7.4.4"
+  }
+}
