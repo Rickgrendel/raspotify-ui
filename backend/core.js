@@ -3,6 +3,7 @@ const path = require('path');
 const WebSocket = require('ws');
 const fs = require('fs');
 const request = require('request');
+const child_process = require('child_process');
 
 const host = '127.0.0.1';
 const port = 3000;
@@ -53,6 +54,13 @@ server = app.listen(port, host, serverStarted);
 
 function serverStarted () {
     console.log('server started');
+    child_process.exec("chromium-browser --kiosk http://127.0.0.1:3000", (err, stdout, stderr) => {
+        console.log("stdout: " + stdout);
+        console.log("stderr: " + stderr);
+        if (err !== null) {
+            console.log("exec error: " + err);
+        }
+    })
 }
 
 async function auth() {
